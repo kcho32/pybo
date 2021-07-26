@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css.map' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <!-- jQuery JS -->
+    <script src="{% static 'jquery-3.4.1.min.js' defer %}"></script>
+    <!-- Bootstrap JS -->
+    <script src="{% static 'bootstrap.min.js' defer %}" ></script>
+
+    <title>Python Board</title>
+</head>
+<br>
+<body>
+<!-- 네비게이션바 -->
+{% include 'navbar.html' %}
+<!-- 기본적으로 추가 될 내용 -->
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
